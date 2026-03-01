@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 4.1)
-project(Calculadora__)
+project(CMD++)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Calculadora__ main.cpp)
+add_executable(CMD++ main.cpp)
