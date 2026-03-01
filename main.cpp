@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
+#include <filesystem>
 
 using namespace std;
 
 int main() {
     string command;
-
+    std::filesystem::path exePath = std::filesystem::current_path();
     while (true) {
-        cout << "> ";
+        cout << exePath << "> ";
         getline(cin, command);
 
         // Separar comando y argumentos
