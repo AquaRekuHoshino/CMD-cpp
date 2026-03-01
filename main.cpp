@@ -1,10 +1,17 @@
 #include <iostream>
 #include <string>
 #include <filesystem>
+#define App_version "1.1.2"
 
 using namespace std;
 
 int main() {
+    cout << "CMD++" << endl;
+    cout << "Creador++ 2026 Aqua!RisHoshino." << endl;
+    cout << "" << endl;
+    cout << "Version " << App_version << endl;
+    cout << "Escribe \"help\" para ver los comandos disponibles." << endl;
+    cout << "" << endl;
     string command;
     std::filesystem::path exePath = std::filesystem::current_path();
     while (true) {
@@ -31,7 +38,11 @@ int main() {
             cout << "clear           -> Limpia la pantalla\n";
             cout << "exit            -> Cierra el programa\n";
             cout << "help            -> Muestra esta ayuda\n";
+            cout << "version         -> Muestra la version\n";
             cout << "====================================================\n";
+        }
+        else if (command == "version") {
+            cout<<"la version de CMD++ es "<<App_version<<endl;
         }
         else {
             cout << "El comando no existe o no es un comando CMD++" << endl;

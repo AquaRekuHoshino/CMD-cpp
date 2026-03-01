@@ -1,5 +1,5 @@
 #define MyAppName "CMD++"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1.2"
 #define MyAppPublisher "AquaReku"
 #define MyAppExeName "CMD++.exe"
 
@@ -20,7 +20,7 @@ WizardStyle=modern
 Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 
 [Files]
-Source: "..\cmake-build-release\CMD++.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\setup\CMD++.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\CMD++"; Filename: "{app}\CMD++.exe"
